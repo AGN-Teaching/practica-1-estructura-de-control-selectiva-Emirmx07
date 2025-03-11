@@ -2,48 +2,44 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=18627383)
 # Práctica 1. Estructura de control selectiva
 
-Presentación del problema
-En esta práctica, se nos ha pedido desarrollar un programa en Python que calcule el sueldo neto que recibe un empleado de una empresa, considerando diferentes factores como:
+## Presentación del Problema
+En esta práctica, se diseñó un programa en Python para calcular el sueldo neto de una persona empleada en una empresa. Se consideraron diferentes factores como el número de horas trabajadas, las reglas de pago de horas normales y extras, el cálculo del Impuesto Sobre la Renta (ISR), aportaciones a seguridad social y participación en fondos de ahorro.
 
-El salario por hora.
+El objetivo principal fue aplicar estructuras de control selectivas para determinar correctamente las deducciones y percepciones de cada empleado, obteniendo finalmente el sueldo neto.
 
-Las horas trabajadas en el mes y los respectivos incrementos salariales por horas extras.
+## Diseño del Algoritmo
+Para resolver este problema, se utilizaron los siguientes conceptos:
 
-Los impuestos sobre la renta (ISR) aplicados de manera progresiva según la tabla del SAT.
+### 1. **Listas**
+   - Se usaron listas para almacenar la tabla del ISR de forma estructurada, permitiendo recorrerla con un ciclo y seleccionar el porcentaje adecuado según el sueldo bruto.
 
-Las deducciones por seguridad social y aportaciones a la caja de ahorros de la empresa.
+### 2. **Strings**
+   - Se emplearon cadenas de texto para manejar la entrada del usuario en opciones como el tipo de ahorro en la caja de ahorro de la empresa.
 
-La participación opcional en el fondo de ahorro solidario.
+### 3. **Estructura de Control Secuencial**
+   - Se aplicó una secuencia de instrucciones en la que se capturan los datos del usuario, se realizan los cálculos en orden lógico y finalmente se muestran los resultados.
 
-El objetivo es solicitar al usuario los datos necesarios, calcular su sueldo bruto, aplicar las deducciones correspondientes y mostrar su sueldo neto.
+### 4. **Estructura de Control Selectiva Simple**
+   - Se usó para verificar la elección del usuario en las opciones de caja de ahorro y ahorro solidario, asignando los valores adecuados a las variables.
 
-Comentarios sobre el diseño del algoritmo
-Para abordar este problema, diseñamos el algoritmo de la siguiente manera:
+### 5. **Estructura de Control Selectiva Anidada**
+   - Se implementó para calcular el sueldo bruto considerando las reglas de pago de horas normales y extras. Dependiendo del número de horas trabajadas, se aplicaban diferentes fórmulas de cálculo.
 
-Solicitamos al usuario los datos de entrada: salario por hora, horas trabajadas, tipo de ahorro y participación en el fondo solidario.
+### 6. **Estructura de Control Selectiva Múltiple**
+   - Se utilizó `if-elif-else` para determinar el rango del sueldo bruto dentro de la tabla de ISR y calcular el impuesto correspondiente.
 
-Calculamos el sueldo bruto considerando las reglas de pago por horas trabajadas y horas extras.
+## Implementación en Python
+El programa solicita al usuario los siguientes datos de entrada:
+- Salario por hora.
+- Número de horas trabajadas.
+- Tipo de participación en la caja de ahorro.
+- Porcentaje de ahorro solidario.
 
-Determinamos el ISR basándonos en la tabla progresiva del SAT.
+Luego, realiza los cálculos correspondientes usando las estructuras de control mencionadas y finalmente imprime un resumen de la nómina con el sueldo bruto, deducciones y sueldo neto.
 
-Calculamos las deducciones por seguridad social y ahorros voluntarios.
+## Comentarios sobre la Implementación
+El uso de listas me permitió manejar la tabla del ISR de manera más estructurada y eficiente. Además, las estructuras de control selectivas facilitaron la toma de decisiones en cada etapa del cálculo. Se recomienda mantener un código modular y organizado para facilitar su mantenimiento y futuras modificaciones.
 
-Restamos todas las deducciones al sueldo bruto para obtener el sueldo neto.
+En conclusión, la práctica permitió reforzar el uso de estructuras selectivas en Python y su aplicación en un contexto real como el cálculo de sueldos me di cuenta lo util que son las actividades que vimos en clase, y me interesa saber y aprender mas sobre esta clase.
 
-Finalmente, mostramos un resumen con todos los cálculos realizados.
-
-El programa se estructura mediante funciones modulares, lo que mejora la organización y la reutilización del código.
-
-Comentarios sobre la implementación en Python
-El código en Python se implementó siguiendo buenas prácticas de programación:
-
-Se utilizaron funciones para segmentar el cálculo del sueldo bruto, ISR y deducciones.
-
-Se usaron estructuras de control selectivas para determinar la categoría salarial del usuario en la tabla de ISR.
-
-Se emplearon operaciones matemáticas para los cálculos de deducciones y sueldo neto.
-
-Se incluyeron entradas del usuario y validaciones básicas para garantizar que los valores ingresados sean correctos.
-
-El programa cumple con los requisitos de la práctica y proporciona un desglose detallado del cálculo del sueldo neto de un empleado.
 
